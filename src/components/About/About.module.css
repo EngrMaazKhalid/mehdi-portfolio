@@ -21,6 +21,12 @@
     .Title-sec{
         padding-left: 15px;
         padding-right: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .Title-bg {
+        display: flex;
+        justify-content: center;
     }
     .Title-sec-h1{
         font-size: 35px!important;
@@ -132,6 +138,11 @@
 @media (max-width: 992px){
     .col-div{
         margin-bottom: 4rem;
+        margin-left: 1.5rem;
+    }
+    .col-div2{
+     
+        margin-left: 1.5rem;
     }
 }
 @media (min-width: 1200px){

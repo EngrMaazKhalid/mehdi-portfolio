@@ -7,7 +7,7 @@ const Portfolio = ()=>{
     const data =[
         { id: '01',
         name:"Email Spam/Non-Spam filter",
-        img:require('./spam.png'),
+        img:require('./spam.jpg'),
         src:`'Python(sklearn, statistics)
         This project uses sklearn and machine learning techniques to train a spam/ham classification model using a
         dataset of emails. The model achieved an impressive accuracy score of 97%, distinguishing between spam
@@ -15,7 +15,7 @@ const Portfolio = ()=>{
         link:'#'},
         { id: '02',
         name:"Attendance System using FaceRecogniton",
-        img:require('./face-recognition.png'),
+        img:require('./face-recognition.jpg'),
         src:`'Python(cv2, face_recognition)
         This project is an automated attendance marking system that utilizes computer vision and machine
         learning. It detects faces using Python, cv2, and face_recognition libraries, and automatically updates an
@@ -33,7 +33,7 @@ const Portfolio = ()=>{
     },
         { id: '04',
         name:"Speech Enhancement",
-        img:require('./Voice.jpg'),
+        img:require('./voice.avif'),
         src:`'Python (tensorflow, scipy, sklearn, matplotlib, pystoi)
         The Speech Enhancement project utilizes TensorFlow (tf) and scikit-learn (sklearn) to train a CNN sequential
         model. It loads a WAV file, converts it to a spectrogram, removes noisy spectra, and reconstructs a clean
