@@ -4,12 +4,15 @@ import DownloadIcon from '@mui/icons-material/Download'
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
 import { motion } from 'framer-motion'
+import axios from 'axios';
 // import { CircularProgress } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress';
 import { Box } from '@mui/system';
 import School from '@mui/icons-material/School';
 const About = () => {
-
+  
+  
+  
   const data = [
     {
       id: '0',
@@ -91,7 +94,7 @@ const About = () => {
               </div>
               {/* })} */}
               <div className={classes['down-div']}>
-                <a className={classes['button']} href={'mehdi-cv.pdf'} download><span className={classes['button-text']}> Download</span>
+                <a className={classes['button']}  href={require('./mehdi-cv.pdf')} download><span className={classes['button-text']}> Download</span>
                   <span className={classes['button-icon']}>
                     <DownloadIcon sx={{ fontSize: '3rem' }} />
                   </span>

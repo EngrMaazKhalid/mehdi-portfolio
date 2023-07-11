@@ -2,11 +2,15 @@ import { Modal, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react';
 import classes from './portfolio.module.css'
-
+import GithubIcon from '@mui/icons-material/GitHub';
 
 const ModalArea = (props) =>{
   const style = {
     position: 'absolute',
+    display: 'flex',
+    alignItem: 'center',
+    justifyContent:'center',
+    flexDirection:'column',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
@@ -33,7 +37,13 @@ const ModalArea = (props) =>{
           <Typography id="modal-modal-description" sx={{ mb:2, mt: 2, fontSize:'1.7rem',display:'flex', justifyContent:'center', alignText:'center' }}>
             {props.src}
           </Typography>
+          <Typography id="modal-modal-description" sx={{ mb:2, mt: 2, fontSize:'1.7rem',display:'flex', justifyContent:'center', alignText:'center' }}>
+       
+         <a href={props.link}> <GithubIcon sx={{fontSize:'5rem'}} /> </a> 
+          </Typography>
+          <div className={classes['div-img']}>
           <img className={classes['port-img1']} src={props.img} />
+          </div>
         </Box>
       </Modal>
     )
